@@ -1,16 +1,20 @@
 {% extends "base.html" %}
-{% block title %}About{% endblock title %}
+{% block title %}About{% endblock %}
 {% block body %}
-  <main class="container my-5">
-    <div class="bg-white p-4 rounded shadow" style="max-width: 700px; margin: auto;">
-      <h1 class="text-primary mb-3">About Me</h1>
-      <h2>Sujal Patel</h2>
-      <p>Hello! I'm Sujal Patel, a passionate web developer. This website lets you add and delete your To-Do items easily.</p>
-
-      <div class="info mt-4">
+<main class="container my-5">
+  <div class="card shadow-lg mx-auto" style="max-width: 700px;">
+    <div class="card-body">
+      <h1 class="card-title text-primary mb-3">About Me</h1>
+      <h4 class="mb-3">Sujal Patel</h4>
+      <p class="card-text">
+        Hello! I'm Sujal Patel, a passionate web developer. This website helps you manage your daily tasks by allowing you to add, update, and delete To-Do items in a simple and efficient way.
+      </p>
+      <hr>
+      <div class="mt-4">
         <p><strong>📞 Contact Number:</strong> +91 94272 04285</p>
-        <p><strong>📧 Email:</strong> sujalpatel0510@gmail.com</p>
+        <p><strong>📧 Email:</strong> <a href="mailto:sujalpatel0510@gmail.com">sujalpatel0510@gmail.com</a></p>
       </div>
     </div>
-  </main>
+  </div>
+</main>
 {% endblock %}

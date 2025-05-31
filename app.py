@@ -59,8 +59,14 @@ def delete_todo(sno):
 def about():
     return render_template('about.html')
 
+# if __name__ == '__main__':
+#     # Make sure the tables are created inside the app context
+#     with app.app_context():
+#         db.create_all()
+#     app.run(debug=True, port=8000)
+
 if __name__ == '__main__':
-    # Make sure the tables are created inside the app context
-    with app.app_context():
-        db.create_all()
-    app.run(debug=True, port=8000)
+    from os import environ
+    port = int(environ.get('PORT', 10000))
+    app.run(host='0.0.0.0', port=port)
+
